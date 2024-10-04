@@ -39,3 +39,11 @@
 ## Картинки
 
 ![Автомат разбора выражений](/assets/parser.png)
+
+## Код (воспроизведение)
+
+```python
+from library import MakeAll
+
+code = MakeAll()
+```
