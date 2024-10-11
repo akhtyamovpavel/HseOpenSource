@@ -5,7 +5,7 @@
 ## Полезные ссылки
 
 * [Markdown Guide](/markdown-guide.md)
-
+* [Тестирование](/TEST.md)
 
 ## Список задач
 
