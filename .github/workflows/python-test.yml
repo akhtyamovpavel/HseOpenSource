@@ -52,7 +52,7 @@ jobs:
     - run: coverage xml
     - uses: paambaati/codeclimate-action@v9.0.0
       env:
-        CC_TEST_REPORTER_ID: "{{ secrets.CC_TEST_REPORTER_ID }}"
+        CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
       with:
         coverageLocations:
           coverage.xml:coverage.py
