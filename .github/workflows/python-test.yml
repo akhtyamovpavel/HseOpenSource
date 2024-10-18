@@ -55,3 +55,4 @@ jobs:
       with:
         coverageLocations:
           coverage.xml:coverage.py
+        debug: true
