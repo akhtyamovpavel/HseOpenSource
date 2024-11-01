@@ -1,20 +1,33 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 from setuptools import setup, find_packages
+from glob import glob
 
-ROOT_PACKAGE_NAME = 'triangle'
+import os
+# from pybind11.setup_helpers import Pybind11Extension, build_ext
+ROOT_PACKAGE_NAME = 'triangle-hse-opensource'
 
 
-def parse_requirements():
-    with open('requirements.txt') as f:
-        return f.read().splitlines()
 
+# ext_modules = [
+#     Pybind11Extension(
+#         "cpp_extension",
+#         sorted(glob("src/*.cpp")),  # Sort source files for reproducibility
+#     ),
+# ]
 
 setup(
     name=ROOT_PACKAGE_NAME,
-    version='1.1',
+    version='1.2',
     author=['Pavel Akhtyamov'],
-    packages=find_packages(),
-    long_description='triangles',
-    requirements=parse_requirements()
+    packages=['triangle'],
+    #find_packages(
+    #    include='triangle',
+    #    exclude='test*',
+    #),
+    long_description='Package for computing triangle sum',
+    install_requires=['six'],
+    # cmdclass={"build_ext": build_ext},
+    # ext_modules=ext_modules
 )
+
