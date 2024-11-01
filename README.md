@@ -5,6 +5,13 @@
 
 Это репозиторий с примерами Open Source кода ВШЭ.
 
+## Инструкции для сборки
+
+```
+docker pull akhtyamovpavel/hse-open-source:3.11-1.3-dev
+docker run --rm -ti akhtyamovpavel/hse-open-source:3.11-1.3-dev
+python -m build
+```
 ## Полезные ссылки
 
 * [Markdown Guide](/markdown-guide.md)
